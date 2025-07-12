@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Capacitor generated folders
+android/
+ios/
+www/
+
+# Environment variables
+.env
+.env.local
+
+# Build files
+dist/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
