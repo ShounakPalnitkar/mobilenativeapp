@@ -1,30 +1,21 @@
 {
   "name": "ckd-prediction-tool",
   "version": "1.0.0",
-  "description": "Chronic Kidney Disease Prediction Tool with Capacitor",
+  "description": "Chronic Kidney Disease Prediction Tool (Web Version)",
   "main": "index.js",
   "scripts": {
     "start": "serve -s www",
-    "build": "npm config set registry https://registry.npmjs.org/ && npm cache clean --force && npm install --legacy-peer-deps && mkdir -p www && cp src/index.html www/ && cp -r src/assets www/",
-    "mobile:android": "npm run build && npx cap sync android && npx cap open android",
-    "mobile:ios": "npm run build && npx cap sync ios && npx cap open ios",
+    "build": "npm install --legacy-peer-deps && mkdir -p www && cp src/index.html www/ && cp -r src/assets www/",
+    "render-build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean-install": "rm -rf node_modules package-lock.json && npm install --legacy-peer-deps"
+    "clean": "rm -rf node_modules package-lock.json"
   },
   "dependencies": {
-    "@capacitor/android": "^5.0.0",
-    "@capacitor/app": "^5.0.0",
-    "@capacitor/camera": "^5.0.0",
-    "@capacitor/cli": "^5.0.0",
-    "@capacitor/core": "^5.0.0",
-    "@capacitor/device": "^5.0.0",
-    "@capacitor/geolocation": "^5.0.0",
-    "@capacitor/haptics": "^5.0.0",
-    "@capacitor/ios": "^5.0.0",
-    "@capacitor/share": "^5.0.0"
+    "@capacitor/core": "5.0.0",
+    "serve": "14.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "serve": "^14.2.0"
+    "@capacitor/cli": "5.0.0",
+    "eslint": "8.56.0"
   }
 }
