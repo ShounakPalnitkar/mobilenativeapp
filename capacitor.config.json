@@ -2,6 +2,7 @@
   "appId": "com.yourcompany.ckdapp",
   "appName": "CKD Prediction",
   "webDir": "www",
+  "bundledWebRuntime": false,
   "plugins": {
     "Camera": {
       "photos": true
@@ -10,10 +11,16 @@
       "precision": "high"
     }
   },
+  "server": {
+    "url": "http://localhost",
+    "cleartext": true
+  },
   "ios": {
-    "minVersion": "13.0"
+    "minVersion": "13.0",
+    "scheme": "CKDApp"
   },
   "android": {
-    "minVersion": "22"
+    "minVersion": "22",
+    "allowMixedContent": true
   }
 }
