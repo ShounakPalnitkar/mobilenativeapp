@@ -1,0 +1,19 @@
+{
+  "appId": "com.yourcompany.ckdapp",
+  "appName": "CKD Prediction",
+  "webDir": "www",
+  "plugins": {
+    "Camera": {
+      "photos": true
+    },
+    "Geolocation": {
+      "precision": "high"
+    }
+  },
+  "ios": {
+    "minVersion": "13.0"
+  },
+  "android": {
+    "minVersion": "22"
+  }
+}
