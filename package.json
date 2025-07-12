@@ -1,0 +1,28 @@
+{
+  "name": "ckd-prediction-tool",
+  "version": "1.0.0",
+  "description": "Chronic Kidney Disease Prediction Tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve -s dist",
+    "build": "mkdir -p dist && cp src/index.html dist/ && cp -r src/assets dist/",
+    "mobile:android": "npm run build && npx cap sync android && npx cap open android",
+    "mobile:ios": "npm run build && npx cap sync ios && npx cap open ios",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/app": "^5.0.0",
+    "@capacitor/camera": "^5.0.0",
+    "@capacitor/cli": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/device": "^5.0.0",
+    "@capacitor/geolocation": "^5.0.0",
+    "@capacitor/haptics": "^5.0.0",
+    "@capacitor/ios": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "serve": "^14.2.0"
+  }
+}
